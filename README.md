@@ -8,10 +8,10 @@
 
 
 
-## This has an associated test file. You can run the test file by installing the required package (jest)
+## This has an associated test file. You can run the test file by installing the required package (pytest)
 
-1) In the terminal, type ```npm i``` and press enter.  (This installs all required packages that are found listed in package.json)
-2) Run the tests using ```npm test```.
+1) In the terminal, type ```pip install pytest``` and press enter. 
+2) Run the tests using ```pytest dictionaries_test.py```.
 
 
-3 of the tests will currently pass. 5 of the tests won't pass as the code hasn't been written yet.
+2 of the tests will currently pass. The rest won't pass as the code hasn't been written yet.
