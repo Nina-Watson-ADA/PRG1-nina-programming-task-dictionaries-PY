@@ -41,7 +41,9 @@ def test_get_books_by_author(clean_library):
     author_name = "Nonexistent Author"
     result = get_books_by_author(clean_library, author_name)
 
-    assert isinstance(result, list)
+    assert isinstance(result, list))  # Pass the clean library to add_new_book
+
+    assert len(clean_library) == original_length + 1
     assert len(result) == 0
 
 
@@ -73,9 +75,7 @@ def test_alter_book_status():
 def test_add_new_book(clean_library):  # Use the clean_library fixture
     original_length = len(clean_library)
 
-    add_new_book(clean_library, "New Book", "New Author", False)  # Pass the clean library to add_new_book
-
-    assert len(clean_library) == original_length + 1
+    add_new_book(clean_library, "New Book", "New Author", False
     assert clean_library[-1] == {
         "title": "New Book",
         "author": "New Author",
